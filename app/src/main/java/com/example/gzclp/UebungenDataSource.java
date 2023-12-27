@@ -22,11 +22,12 @@ public class UebungenDataSource {
         dbHelper.close();
     }
 
-    public long insertUebung(String name, double weight, String type, Integer Status) {
+    public long insertUebung(String name, double weight, String type, Integer Status, Integer day) {
         ContentValues values = new ContentValues();
         values.put(DatabaseHelper.COLUMN_NAME, name);
         values.put(DatabaseHelper.COLUMN_WEIGHT, weight);
         values.put(DatabaseHelper.COLUMN_TYPE, type);
+        values.put(DatabaseHelper.COLUMN_DAY, day);
         values.put(DatabaseHelper.COLUMN_STATUS, Status);
 
         return database.insert(DatabaseHelper.TABLE_NAME, null, values);
@@ -38,7 +39,9 @@ public class UebungenDataSource {
                 DatabaseHelper.COLUMN_NAME,
                 DatabaseHelper.COLUMN_WEIGHT,
                 DatabaseHelper.COLUMN_TYPE,
+                DatabaseHelper.COLUMN_DAY,
                 DatabaseHelper.COLUMN_STATUS
+
         };
 
         return database.query(

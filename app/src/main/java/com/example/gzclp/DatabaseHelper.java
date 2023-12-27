@@ -16,6 +16,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_WEIGHT = "weight";
     public static final String COLUMN_TYPE = "type";
     public  static final String COLUMN_STATUS = "status";
+    public static final String COLUMN_DAY = "day";
 
     // SQL-Anweisung zur Erstellung der Tabelle
     private static final String DATABASE_CREATE =
@@ -24,6 +25,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     COLUMN_NAME + " text not null, " +
                     COLUMN_WEIGHT + " real not null, " +
                     COLUMN_TYPE + " text not null, " +
+                    COLUMN_DAY + "text not null, " +
                     COLUMN_STATUS + " real not null);";
 
 

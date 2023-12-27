@@ -11,8 +11,8 @@
         android:layout_height="59dp"
         android:layout_marginTop="80dp"
         android:ems="10"
+        android:hint="Namen"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,10 +34,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="80dp"
         android:text="T1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Uebungsgewicht" />
+        app:layout_constraintTop_toBottomOf="@+id/addOnWhichDay" />
 
     <Button
         android:id="@+id/saveAsT2"
@@ -56,4 +56,16 @@
         android:text="T3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/saveAsT2" />
+
+    <EditText
+        android:id="@+id/addOnWhichDay"
+        android:layout_width="263dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Welcher Tag"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Uebungsgewicht" />
 </androidx.constraintlayout.widget.ConstraintLayout>
